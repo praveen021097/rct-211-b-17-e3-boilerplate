@@ -49,5 +49,5 @@ export const useCounter = (init) => {
 
      
  }
-return {count,incCount,decCount,disable};
+return {count,incCount,decCount};
 };

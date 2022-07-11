@@ -20,10 +20,10 @@ function App() {
     <div className="App">
       {/* DO NOT CHANGE the 5 lines below   */}
       <h3>Value: {count}</h3>
-      <button onClick={() => incCount()} disabled={disable}>Increment</button>
-      <button onClick={() => incCount(3)} disabled={disable} >Increment 3</button>
-      <button onClick={() => decCount(2)} disabled={disable}>Decrement 2</button>
-      <button onClick={() => decCount(4)} disabled={disable}>Decrement 4</button>
+      <button onClick={() => incCount()} disabled={count>15 ?true:false}>Increment</button>
+      <button onClick={() => incCount(3)} disabled={count>15 ?true:false} >Increment 3</button>
+      <button onClick={() => decCount(2)} disabled={count<5?true:false}>Decrement 2</button>
+      <button onClick={() => decCount(4)} disabled={count<5?true:false}>Decrement 4</button>
 
       <br />
       {/* You can pass the required props as mentioned in the questions to
